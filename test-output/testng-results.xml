@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="60984" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:40 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="60984" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:40 IST">
+      <class name="sample.sample.amazonSearch">
+        <test-method status="PASS" signature="launchSafari()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchSafari" duration-ms="37790" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafari -->
+        <test-method status="PASS" signature="launchChrome()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchChrome" duration-ms="52619" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchChrome -->
+        <test-method status="PASS" signature="launchFirefox()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchFirefox" duration-ms="40194" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFirefox -->
+        <test-method status="PASS" signature="launchEdge()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchEdge" duration-ms="60913" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchEdge -->
+      </class> <!-- sample.sample.amazonSearch -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

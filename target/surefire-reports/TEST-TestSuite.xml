@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="53.08" tests="4" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Mayank&apos;s PC\eclipse-workspace\sample\target\test-classes;C:\Users\Mayank&apos;s PC\eclipse-workspace\sample\target\classes;C:\Users\Mayank&apos;s PC\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-6\selenium-java-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-6\selenium-api-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-6\selenium-chrome-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc6\auto-service-annotations-1.0-rc6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\auto\service\auto-service\1.0-rc6\auto-service-1.0-rc6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\guava\guava\29.0-jre\guava-29.0-jre.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\checkerframework\checker-qual\2.11.1\checker-qual-2.11.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-6\selenium-chromium-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-6\selenium-devtools-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-6\selenium-http-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-6\selenium-json-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-6\selenium-edge-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-6\selenium-edgehtml-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-6\selenium-firefox-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-6\selenium-firefox-xpi-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-6\selenium-ie-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-6\selenium-opera-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-6\selenium-remote-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\squareup\okhttp3\okhttp\4.5.0\okhttp-4.5.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.70\kotlin-stdlib-1.3.70.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\squareup\okio\okio\2.6.0\okio-2.6.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.70\kotlin-stdlib-common-1.3.70.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\grpc\grpc-context\1.28.0\grpc-context-1.28.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-buffer\4.1.49.Final\netty-buffer-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-common\4.1.49.Final\netty-common-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec-http\4.1.49.Final\netty-codec-http-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec\4.1.49.Final\netty-codec-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.49.Final\netty-transport-native-epoll-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.49.Final\netty-transport-native-epoll-4.1.49.Final-linux-x86_64.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.49.Final\netty-transport-native-kqueue-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.49.Final\netty-transport-native-kqueue-4.1.49.Final-osx-x86_64.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.49.Final\netty-transport-native-unix-common-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport\4.1.49.Final\netty-transport-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-resolver\4.1.49.Final\netty-resolver-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\opentelemetry\opentelemetry-api\0.4.0\opentelemetry-api-0.4.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\opentelemetry\opentelemetry-context-prop\0.4.0\opentelemetry-context-prop-0.4.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\opentelemetry\opentelemetry-sdk\0.4.0\opentelemetry-sdk-0.4.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\projectreactor\netty\reactor-netty\0.9.6.RELEASE\reactor-netty-0.9.6.RELEASE.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec-http2\4.1.48.Final\netty-codec-http2-4.1.48.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-handler-proxy\4.1.48.Final\netty-handler-proxy-4.1.48.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\projectreactor\reactor-core\3.3.5.RELEASE\reactor-core-3.3.5.RELEASE.jar;C:\Users\Mayank&apos;s PC\.m2\repository\net\bytebuddy\byte-buddy\1.10.9\byte-buddy-1.10.9.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\asynchttpclient\async-http-client\2.12.1\async-http-client-2.12.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.1\async-http-client-netty-utils-2.12.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec-socks\4.1.48.Final\netty-codec-socks-4.1.48.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-6\selenium-safari-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-6\selenium-support-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Mayank&apos;s PC\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\browserstack\browserstack-local-java\0.1.0\browserstack-local-java-0.1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\zeromq\jeromq\0.5.1\jeromq-0.5.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\eu\neilalexander\jnacl\1.0.0\jnacl-1.0.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.12\httpclient-4.5.12.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Mayank&apos;s PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\browserstack\automate-testassist\1.1.0\automate-testassist-1.1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\javax\xml\bind\jaxb-api\2.3.0\jaxb-api-2.3.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Mayank&apos;s PC\AppData\Local\Temp\surefire5680359266300941755\surefirebooter8114491125100755375.jar C:\Users\Mayank&apos;s PC\AppData\Local\Temp\surefire5680359266300941755 2020-09-11T16-03-59_471-jvmRun1 surefire2496759694110913413tmp surefire_06381031579608521985tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\Mayank&apos;s PC\eclipse-workspace\sample\target\test-classes;C:\Users\Mayank&apos;s PC\eclipse-workspace\sample\target\classes;C:\Users\Mayank&apos;s PC\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-6\selenium-java-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-6\selenium-api-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-6\selenium-chrome-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc6\auto-service-annotations-1.0-rc6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\auto\service\auto-service\1.0-rc6\auto-service-1.0-rc6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\guava\guava\29.0-jre\guava-29.0-jre.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\checkerframework\checker-qual\2.11.1\checker-qual-2.11.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-6\selenium-chromium-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-6\selenium-devtools-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-6\selenium-http-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-6\selenium-json-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-6\selenium-edge-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-6\selenium-edgehtml-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-6\selenium-firefox-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-6\selenium-firefox-xpi-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-6\selenium-ie-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-6\selenium-opera-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-6\selenium-remote-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\squareup\okhttp3\okhttp\4.5.0\okhttp-4.5.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.70\kotlin-stdlib-1.3.70.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\squareup\okio\okio\2.6.0\okio-2.6.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.70\kotlin-stdlib-common-1.3.70.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\grpc\grpc-context\1.28.0\grpc-context-1.28.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-buffer\4.1.49.Final\netty-buffer-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-common\4.1.49.Final\netty-common-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec-http\4.1.49.Final\netty-codec-http-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec\4.1.49.Final\netty-codec-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.49.Final\netty-transport-native-epoll-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.49.Final\netty-transport-native-epoll-4.1.49.Final-linux-x86_64.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.49.Final\netty-transport-native-kqueue-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.49.Final\netty-transport-native-kqueue-4.1.49.Final-osx-x86_64.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.49.Final\netty-transport-native-unix-common-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-transport\4.1.49.Final\netty-transport-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-resolver\4.1.49.Final\netty-resolver-4.1.49.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\opentelemetry\opentelemetry-api\0.4.0\opentelemetry-api-0.4.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\opentelemetry\opentelemetry-context-prop\0.4.0\opentelemetry-context-prop-0.4.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\opentelemetry\opentelemetry-sdk\0.4.0\opentelemetry-sdk-0.4.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\projectreactor\netty\reactor-netty\0.9.6.RELEASE\reactor-netty-0.9.6.RELEASE.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec-http2\4.1.48.Final\netty-codec-http2-4.1.48.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-handler-proxy\4.1.48.Final\netty-handler-proxy-4.1.48.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\projectreactor\reactor-core\3.3.5.RELEASE\reactor-core-3.3.5.RELEASE.jar;C:\Users\Mayank&apos;s PC\.m2\repository\net\bytebuddy\byte-buddy\1.10.9\byte-buddy-1.10.9.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\asynchttpclient\async-http-client\2.12.1\async-http-client-2.12.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.1\async-http-client-netty-utils-2.12.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\io\netty\netty-codec-socks\4.1.48.Final\netty-codec-socks-4.1.48.Final.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-6\selenium-safari-driver-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-6\selenium-support-4.0.0-alpha-6.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Mayank&apos;s PC\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\browserstack\browserstack-local-java\0.1.0\browserstack-local-java-0.1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\zeromq\jeromq\0.5.1\jeromq-0.5.1.jar;C:\Users\Mayank&apos;s PC\.m2\repository\eu\neilalexander\jnacl\1.0.0\jnacl-1.0.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.12\httpclient-4.5.12.jar;C:\Users\Mayank&apos;s PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Mayank&apos;s PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mayank&apos;s PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Mayank&apos;s PC\.m2\repository\com\browserstack\automate-testassist\1.1.0\automate-testassist-1.1.0.jar;C:\Users\Mayank&apos;s PC\.m2\repository\javax\xml\bind\jaxb-api\2.3.0\jaxb-api-2.3.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Mayank&apos;s PC"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_261\jre"/>
+    <property name="basedir" value="C:\Users\Mayank&apos;s PC\eclipse-workspace\sample"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mayank&apos;s PC\AppData\Local\Temp\surefire5680359266300941755\surefirebooter8114491125100755375.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_261-b12"/>
+    <property name="user.name" value="Mayank&apos;s PC"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="sun.nio.ch.bugLevel" value=""/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Mayank&apos;s PC\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MAYANK~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_261"/>
+    <property name="user.dir" value="C:\Users\Mayank&apos;s PC\eclipse-workspace\sample"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Mayank&apos;s PC\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3/bin;C:\Program Files\Java\jdk1.8.0_261/bin;C:\Program Files\Java\jdk1.8.0_261/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Java\jre1.8.0_261\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\Mayank&apos;s PC\Downloads\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Users\Mayank&apos;s PC\AppData\Local\Android\Sdk\platform-tools;C:\Users\Mayank&apos;s PC\AppData\Local\Android\Sdk\tools;C:\Users\Mayank&apos;s PC\AppData\Local\Android\Sdk\tools\bin;C:\Users\Mayank&apos;s PC\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank&apos;s PC\AppData\Roaming\npm;C:\Users\Mayank&apos;s PC\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.261-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="launchChrome" classname="sample.sample.amazonSearch" time="6.946">
+    <failure message="[browserstack.local] is set to true but local testing through BrowserStack is not connected. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 5.62 seconds&#10;Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;&#10;System info: host: &apos;DESKTOP-SSA0485&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+[browserstack.local] is set to true but local testing through BrowserStack is not connected. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.62 seconds
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-SSA0485', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: RemoteWebDriver
+	at sample.sample.amazonSearch.launchChrome(amazonSearch.java:108)
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="launchSafari" classname="sample.sample.amazonSearch" time="39.744">
+    <system-out><![CDATA[67a1dff6baa0a2b0e638a4f43bb54c3687a6b1aa
+eee37d7227a64722778edca0ceef900fc7c22d3c
+0ebd0990efef4b7b3561866f6d5840a053a8b844
+Product List   =24K Gold Plated iPhone Xs 256 GB Silver - Unlocked Custom
+*********************************************************************************************
+Product List   =Apple iPhone XS (64GB, Space Gray) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =Apple iPhone XS, 64GB, Space Gray - For AT&T (Renewed)
+*********************************************************************************************
+Product List   =Apple iPhone XS Max, 64GB, Silver - Fully Unlocked (Renewed)
+*********************************************************************************************
+Product List   =Apple iPhone X, 64GB, Space Gray - Fully Unlocked (Renewed Premium)
+*********************************************************************************************
+Product List   =24K Gold Plated iPhone Xs 256 GB Silver - Unlocked Custom
+*********************************************************************************************
+Product List   =Apple iPhone XS (64GB, Space Gray) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =Apple iPhone XS, 64GB, Space Gray - For AT&T (Renewed)
+Product List   =Apple iPhone 8 Plus (128GB, Space Gray) [Locked] + Carrier Subscription
+*********************************************************************************************
+*********************************************************************************************
+Product List   =Apple iPhone XS Max, 64GB, Silver - Fully Unlocked (Renewed)
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Silver - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+*********************************************************************************************
+Product List   =Apple iPhone X, 64GB, Space Gray - Fully Unlocked (Renewed Premium)
+Product List   =iPhone 8 Plus 64GB Factory Unlocked - Gold - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus (128GB, Space Gray) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Red - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Silver - ATT Tmobile Metro Cricket Straight Talk Mint
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Space Gray - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+*********************************************************************************************
+Product List   =iPhone 8 Plus 64GB Factory Unlocked - Gold - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Red - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Space Gray - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =Apple iPhone 7, Fully Unlocked, 128GB (Renewed)
+Product List   =Apple iPhone 7, Fully Unlocked, 128GB (Renewed)
+*********************************************************************************************
+*********************************************************************************************
+Product List   =Apple iPhone XR (64GB, Black) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =Apple iPhone XR (64GB, Black) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =New Apple iPhone SE (64GB, White) [Locked] + Carrier Subscription
+Product List   =New Apple iPhone SE (64GB, White) [Locked] + Carrier Subscription
+*********************************************************************************************
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus, 64GB, Gold - For T-Mobile (Renewed)
+*********************************************************************************************
+Product List   =Apple iPhone 7 Plus, 256GB, Black - for AT&T/T-Mobile (Renewed)
+*********************************************************************************************
+Product List   =LG Electronics LG Q7+ Limited Edition BTS Factory Unlocked Smartphone - Black (U.S. Warranty)
+*********************************************************************************************
+Product List   =Apple iPhone 7 Plus, 128GB, Rose Gold - For AT&T (Renewed)
+Product List   =Apple iPhone 8 Plus, 64GB, Gold - For T-Mobile (Renewed)
+*********************************************************************************************
+*********************************************************************************************
+Product List   =Verizon Prepaid - Apple iPhone 6S Plus (32GB) - Space Gray
+Product List   =Apple iPhone 7 Plus, 256GB, Black - for AT&T/T-Mobile (Renewed)
+*********************************************************************************************
+*********************************************************************************************
+Product List   =LG Electronics LG Q7+ Limited Edition BTS Factory Unlocked Smartphone - Black (U.S. Warranty)
+*********************************************************************************************
+Product List   =Apple iPhone 7 Plus, 128GB, Rose Gold - For AT&T (Renewed)
+*********************************************************************************************
+Product List   =Verizon Prepaid - Apple iPhone 6S Plus (32GB) - Space Gray
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Silver - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Gold - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Silver - Att Tmobile Metro Straight Talk Cricket Mint
+Product List   =Apple iPhone 6 64GB Factory Unlocked - Silver - ATT Tmobile Metro Cricket
+*********************************************************************************************
+*********************************************************************************************
+Product List   =Apple iPhone 6 64GB Factory Unlocked - Gold - ATT Tmobile Metro Cricket
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Gold - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Gray - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+Product List   =Apple iPhone 6 64GB Factory Unlocked - Silver - ATT Tmobile Metro Cricket
+*********************************************************************************************
+Display Price List   =589
+*********************************************************************************************
+Product List   =Apple iPhone 6 64GB Factory Unlocked - Gold - ATT Tmobile Metro Cricket
+Display Price List   =389
+*********************************************************************************************
+*********************************************************************************************
+Display Price List   =279
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Gray - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+*********************************************************************************************
+Display Price List   =589.
+*********************************************************************************************
+Display Price List   =389.
+*********************************************************************************************
+Display Price List   =279.
+*********************************************************************************************
+Links List   =https://www.amazon.com/Apple-iPhone-Max-Fully-Unlocked/dp/B07KFMSQKX/ref=sr_1_4?dchild=1&keywords=iPhone+X&qid=1599820464&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-4
+*********************************************************************************************
+Links List   =https://www.amazon.com/Apple-iPhone-Max-Fully-Unlocked/dp/B07KFMSQKX/ref=sr_1_4?dchild=1&keywords=iPhone+X&qid=1599820469&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-4
+*********************************************************************************************
+Links List   =https://www.amazon.com/Apple-iPhone-Plus-64GB-Gold/dp/B07RJL29XH/ref=sr_1_14?dchild=1&keywords=iPhone+X&qid=1599820469&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-14
+*********************************************************************************************
+Links List   =https://www.amazon.com/Apple-iPhone-Plus-64GB-Gold/dp/B07RJL29XH/ref=sr_1_14?dchild=1&keywords=iPhone+X&qid=1599820464&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-14
+*********************************************************************************************
+Links List   =https://www.amazon.com/Verizon-Prepaid-Apple-iPhone-Space/dp/B07SWT3BVV/ref=sr_1_18?dchild=1&keywords=iPhone+X&qid=1599820469&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-18
+*********************************************************************************************
+]]></system-out>
+    <system-err><![CDATA[Sep 11, 2020 4:04:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 11, 2020 4:04:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 11, 2020 4:04:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="launchFirefox" classname="sample.sample.amazonSearch" time="44.855">
+    <system-out><![CDATA[Links List   =https://www.amazon.com/Verizon-Prepaid-Apple-iPhone-Space/dp/B07SWT3BVV/ref=sr_1_18?dchild=1&keywords=iPhone+X&qid=1599820464&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-18
+*********************************************************************************************
+]]></system-out>
+  </testcase>
+  <testcase name="launchEdge" classname="sample.sample.amazonSearch" time="52.278">
+    <system-out><![CDATA[Product List   =24K Gold Plated iPhone Xs 256 GB Silver - Unlocked Custom
+*********************************************************************************************
+Product List   =Apple iPhone XS (64GB, Space Gray) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =Apple iPhone XS, 64GB, Space Gray - For AT&T (Renewed)
+*********************************************************************************************
+Product List   =Apple iPhone XS Max, 64GB, Silver - Fully Unlocked (Renewed)
+*********************************************************************************************
+Product List   =Apple iPhone X, 64GB, Space Gray - Fully Unlocked (Renewed Premium)
+*********************************************************************************************
+Product List   =Apple iPhone 7 Plus, 128GB, Silver - Fully Unlocked (Renewed)
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus (128GB, Space Gray) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Silver - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =iPhone 8 Plus 64GB Factory Unlocked - Gold - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Red - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus 64GB Factory Unlocked - Space Gray - ATT Tmobile Metro Cricket Straight Talk Mint
+*********************************************************************************************
+Product List   =Apple iPhone 7, Fully Unlocked, 128GB (Renewed)
+*********************************************************************************************
+Product List   =Apple iPhone XR (64GB, Black) [Locked] + Carrier Subscription
+*********************************************************************************************
+Product List   =Apple iPhone 8 Plus, 64GB, Gold - For T-Mobile (Renewed)
+*********************************************************************************************
+Product List   =LG Electronics LG Q7+ Limited Edition BTS Factory Unlocked Smartphone - Black (U.S. Warranty)
+*********************************************************************************************
+Product List   =Apple iPhone 7 Plus, 128GB, Rose Gold - For AT&T (Renewed)
+*********************************************************************************************
+Product List   =Verizon Prepaid - Apple iPhone 6S Plus (32GB) - Space Gray
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Silver - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Gold - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+Product List   =Apple iPhone 6 64GB Factory Unlocked - Silver - ATT Tmobile Metro Cricket
+*********************************************************************************************
+Product List   =Apple iPhone 6 64GB Factory Unlocked - Gold - ATT Tmobile Metro Cricket
+*********************************************************************************************
+Product List   =Apple iPhone 5 SE 64GB Fully Unlocked - Gray - Att Tmobile Metro Straight Talk Cricket Mint
+*********************************************************************************************
+Display Price List   =589
+*********************************************************************************************
+Display Price List   =389
+*********************************************************************************************
+Display Price List   =279
+*********************************************************************************************
+Links List   =https://www.amazon.com/Apple-iPhone-Max-Fully-Unlocked/dp/B07KFMSQKX/ref=sr_1_4?dchild=1&keywords=iPhone+X&qid=1599820476&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-4
+*********************************************************************************************
+Links List   =https://www.amazon.com/Apple-iPhone-Plus-64GB-Gold/dp/B07RJL29XH/ref=sr_1_14?dchild=1&keywords=iPhone+X&qid=1599820476&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-14
+*********************************************************************************************
+Links List   =https://www.amazon.com/Verizon-Prepaid-Apple-iPhone-Space/dp/B07SWT3BVV/ref=sr_1_17?dchild=1&keywords=iPhone+X&qid=1599820476&refinements=p_n_feature_twenty_browse-bin%3A17881878011&rnid=17881875011&s=wireless&sr=1-17
+*********************************************************************************************
+]]></system-out>
+  </testcase>
+</testsuite>
