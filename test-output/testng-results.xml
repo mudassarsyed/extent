@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="60984" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:40 IST">
+  <suite started-at="2020-11-27T11:54:09Z" name="Suite" finished-at="2020-11-27T11:54:55Z" duration-ms="45999">
     <groups>
     </groups>
-    <test name="Test" duration-ms="60984" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:40 IST">
-      <class name="sample.sample.amazonSearch">
-        <test-method status="PASS" signature="launchSafari()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchSafari" duration-ms="37790" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:17 IST">
+    <test started-at="2020-11-27T11:54:09Z" name="Test" finished-at="2020-11-27T11:54:55Z" duration-ms="45999">
+      <class name="sample.sample.googleSearch">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sample.sample.googleSearch@358c99f5]" started-at="2020-11-27T17:24:09Z" name="setup" finished-at="2020-11-27T17:24:09Z" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchSafari -->
-        <test-method status="PASS" signature="launchChrome()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchChrome" duration-ms="52619" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchChrome -->
-        <test-method status="PASS" signature="launchFirefox()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchFirefox" duration-ms="40194" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchFirefox -->
-        <test-method status="PASS" signature="launchEdge()[pri:0, instance:sample.sample.amazonSearch@38bc8ab5]" name="launchEdge" duration-ms="60913" started-at="2020-09-11T15:59:39 IST" finished-at="2020-09-11T16:00:40 IST">
+        </test-method> <!-- setup -->
+        <test-method signature="launchEdge()[pri:0, instance:sample.sample.googleSearch@358c99f5]" started-at="2020-11-27T17:24:09Z" name="launchEdge" finished-at="2020-11-27T17:24:55Z" duration-ms="45650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchEdge -->
-      </class> <!-- sample.sample.amazonSearch -->
+        <test-method signature="launchSafari()[pri:0, instance:sample.sample.googleSearch@358c99f5]" started-at="2020-11-27T17:24:09Z" name="launchSafari" finished-at="2020-11-27T17:24:34Z" duration-ms="24454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafari -->
+        <test-method signature="launchFirefox()[pri:0, instance:sample.sample.googleSearch@358c99f5]" started-at="2020-11-27T17:24:09Z" name="launchFirefox" finished-at="2020-11-27T17:24:29Z" duration-ms="19561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFirefox -->
+        <test-method signature="launchChrome()[pri:0, instance:sample.sample.googleSearch@358c99f5]" started-at="2020-11-27T17:24:09Z" name="launchChrome" finished-at="2020-11-27T17:24:44Z" duration-ms="34411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchChrome -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sample.sample.googleSearch@358c99f5]" started-at="2020-11-27T17:24:55Z" name="teardown" finished-at="2020-11-27T17:24:55Z" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sample.sample.googleSearch -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

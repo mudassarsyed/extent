@@ -11,7 +11,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;
 
@@ -32,63 +36,33 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 
-public class amazonSearch {
-	public static final String AUTOMATE_USERNAME = "mayankmaurya2";
-	  public static final String AUTOMATE_ACCESS_KEY ="qwudT56wfMJxWLKKhRv1";
+public class googleSearch {
+	public static final String AUTOMATE_USERNAME = "mayankmaurya4";
+	  public static final String AUTOMATE_ACCESS_KEY ="JzJJjes3cyzHaynTqJpe";
 	  public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	  static String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
-	
-	  public static void amazonProductSearch(WebDriver driver) throws MalformedURLException, InterruptedException
+	  
+	  
+	  @BeforeTest
+	  public void setup()
+	  {
+		  com.browserstack.utils.ExtentReportListner.onTestStart();
+		  
+	  }
+	  public static void googleSearch(WebDriver driver) throws MalformedURLException, InterruptedException
 
 	  {
-		    
-		  	
-		  
-		  // Open Amazon.com
-		driver.get("https://www.amazon.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 	
-		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).clear();
-		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("iPhone X");
-		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
-		WebElement element = driver.findElement(By.xpath("//span[text()='Phone Color']"));
-	
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+		  // Open google.com
+		driver.get("https://www.google.com/");
+		WebElement element = driver.findElement(By.name("q"));
+        element.sendKeys("BrowserStack");
+        element.submit();
+        Thread.sleep(5000);
+        Assert.assertEquals("BrowserStack - Google Search", driver.getTitle());
+        
+        
 		
-		driver.findElement(By.xpath("//span[text()='iOS']/..//div")).click();
-		
-		Thread.sleep(3000);
-		WebElement element2 = driver.findElement(By.xpath("//span[@class='a-button a-button-dropdown a-button-small']//span[@class='a-button-text a-declarative']"));
-		
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element2);
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//span[@class='a-button a-button-dropdown a-button-small']")).click();
-		
-		driver.findElement(By.xpath("//a[text()='Price: High to Low']")).click();
-		
-		Thread.sleep(3000);
-		
-		List<WebElement> productList=driver.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
-		List<WebElement> displayPriceList=driver.findElements(By.xpath("//span[@class='a-price-whole']"));
-		List<WebElement> linkslist=driver.findElements(By.xpath("//a[@class='a-size-base a-link-normal a-text-normal']"));
-		for (int i=0;i<productList.size();i++)
-		{
-		System.out.println("Product List   ="+productList.get(i).getText());	
-		System.out.println("*********************************************************************************************");
-		}
-		for (int i=0;i<displayPriceList.size();i++)
-		{
-		
-		System.out.println("Display Price List   ="+displayPriceList.get(i).getText());
-		System.out.println("*********************************************************************************************");
-		}
-		for (int i=0;i<linkslist.size();i++)
-		{
-		System.out.println("Links List   ="+linkslist.get(i).getAttribute("href"));
-		System.out.println("*********************************************************************************************");
-		}
 		driver.quit();
 	  }
 	  
@@ -105,11 +79,18 @@ public class amazonSearch {
 		    caps.setCapability("name", "launchChrome Test");
 //		    caps.setCapability("browserstack.local", browserstackLocal);
 //		    caps.setCapability("browserstack.local", "true");
+		    com.browserstack.utils.BrowserStackAPI bsApi= new com.browserstack.utils.BrowserStackAPI();
+			  com.browserstack.utils.ExtentReportListner reporter= new com.browserstack.utils.ExtentReportListner();
 		    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
 		    SessionId sessionid = ((RemoteWebDriver) driver).getSessionId();
-		    mark(sessionid);
-		    System.out.println(sessionid);
-		    amazonProductSearch(driver);
+		    String session_id=sessionid.toString();
+		  
+		    googleSearch(driver);
+		    System.out.println(bsApi.getSessionDetails(session_id));
+		    String sessionName=bsApi.getValue(bsApi.getSessionDetails(session_id), "name");
+	        bsApi.markTestStatus(session_id, "FAILED", "Fail");
+	        reporter.onTestFailure(sessionName);
+	        
 	
 	}
 	  
@@ -124,12 +105,20 @@ public class amazonSearch {
 		   caps.setCapability("project", "Automate Project");
 		    caps.setCapability("build", "My First Build");
 		    caps.setCapability("name", "launchEdge Test");
+		    com.browserstack.utils.BrowserStackAPI bsApi= new com.browserstack.utils.BrowserStackAPI();
+			  com.browserstack.utils.ExtentReportListner reporter= new com.browserstack.utils.ExtentReportListner();
 //		    caps.setCapability("browserstack.local", browserstackLocal);
 		   WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
 		   SessionId sessionid = ((RemoteWebDriver) driver).getSessionId();
 		   System.out.println(sessionid);
-		   mark(sessionid);
-		   amazonProductSearch(driver);
+		  
+		   googleSearch(driver);
+		   
+		   String session_id=sessionid.toString();
+		   String sessionName=bsApi.getValue(bsApi.getSessionDetails(session_id), "name");
+		   System.out.println(bsApi.getSessionDetails(session_id));
+	        bsApi.markTestStatus(session_id, "FAILED", "Fail");
+	        reporter.onTestFailure(sessionName);
 
 	}
 	
@@ -150,11 +139,19 @@ public class amazonSearch {
 	    caps.setCapability("build", "My First Build");
 	    caps.setCapability("name", "launchSafari Test");
 //	    caps.setCapability("browserstack.local", browserstackLocal);
+	    com.browserstack.utils.BrowserStackAPI bsApi= new com.browserstack.utils.BrowserStackAPI();
+		  com.browserstack.utils.ExtentReportListner reporter= new com.browserstack.utils.ExtentReportListner();
 	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
 	    SessionId sessionid = ((RemoteWebDriver) driver).getSessionId();
 	    System.out.println(sessionid);
-	    mark(sessionid);
-		amazonProductSearch(driver);
+	    
+		googleSearch(driver);
+		String session_id=sessionid.toString();
+		 String sessionName=bsApi.getValue(bsApi.getSessionDetails(session_id), "name");
+		   System.out.println(bsApi.getSessionDetails(session_id));
+	        bsApi.markTestStatus(session_id, "PASSED", "Pass");
+	        reporter.onTestPass(sessionName);
+
 
 	}
 	
@@ -169,15 +166,30 @@ public class amazonSearch {
 			    caps.setCapability("project", "Automate Project");
 			    caps.setCapability("build", "My First Build");
 			    caps.setCapability("name", "launchFirefox Test");
+			    com.browserstack.utils.BrowserStackAPI bsApi= new com.browserstack.utils.BrowserStackAPI();
+				  com.browserstack.utils.ExtentReportListner reporter= new com.browserstack.utils.ExtentReportListner();
 //			    caps.setCapability("browserstack.local", browserstackLocal);
 			    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
 			    SessionId sessionid = ((RemoteWebDriver) driver).getSessionId();
-			    mark(sessionid);
-			    System.out.println(sessionid);
-			    amazonProductSearch(driver);
+			   
+			    googleSearch(driver);
+			    
+			    String session_id=sessionid.toString();
+			    String sessionName=bsApi.getValue(bsApi.getSessionDetails(session_id), "name");
+				   System.out.println(bsApi.getSessionDetails(session_id));
+			        bsApi.markTestStatus(session_id, "PASSED", "Pass");
+			        reporter.onTestPass(sessionName);
+
 		
 		}
 	
+	 
+	  
+	  @AfterTest
+	  public void teardown()
+	  {
+		  com.browserstack.utils.ExtentReportListner.onFinish();
+	  }
 
 	public static void mark(SessionId sessionid) throws URISyntaxException, UnsupportedEncodingException, IOException {
 		  URI uri = new URI("https://mayankmaurya2:qwudT56wfMJxWLKKhRv1@api.browserstack.com/automate/sessions/"+sessionid+".json");
