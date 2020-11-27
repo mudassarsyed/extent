@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 53.08 s <<< FAILURE! - in TestSuite
-sample.sample.amazonSearch.launchChrome  Time elapsed: 6.946 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-[browserstack.local] is set to true but local testing through BrowserStack is not connected. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.62 seconds
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-SSA0485', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: driver.version: RemoteWebDriver
-	at sample.sample.amazonSearch.launchChrome(amazonSearch.java:108)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.588 s - in TestSuite

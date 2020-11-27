@@ -1,26 +1,24 @@
 package com.browserstack.utils;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.testng.annotations.Parameters;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 public class BrowserStackAPI {
 	
@@ -31,7 +29,7 @@ public class BrowserStackAPI {
 }
 
     public void markTestStatus(String session_id, String status,String reason) throws URISyntaxException, IOException {
-        URI uri = new URI("https://mayankmaurya4:JzJJjes3cyzHaynTqJpe@api.browserstack.com/automate/sessions/"+session_id+".json");
+        URI uri = new URI("https://mudassardemo:Mz55zvYU9iCdyV9dvsKv@api.browserstack.com/automate/sessions/"+session_id+".json");
         HttpPut putRequest = new HttpPut(uri);
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -43,7 +41,7 @@ public class BrowserStackAPI {
     }
 
     public JSONObject getSessionDetails(String session_id) throws URISyntaxException, IOException {
-        URI uri = new URI("https://mayankmaurya4:JzJJjes3cyzHaynTqJpe@api.browserstack.com/automate/sessions/"+session_id+".json");
+        URI uri = new URI("https://mudassardemo:Mz55zvYU9iCdyV9dvsKv@api.browserstack.com/automate/sessions/"+session_id+".json");
         HttpGet getRequest = new HttpGet(uri);
         HttpResponse response =  HttpClientBuilder.create().build().execute(getRequest);
         String json_string = EntityUtils.toString(response.getEntity());
@@ -53,7 +51,7 @@ public class BrowserStackAPI {
     
     
     public static JSONObject getBuildDetails(String build_id) throws URISyntaxException, IOException {
-        URI uri = new URI("https://mayankmaurya4:JzJJjes3cyzHaynTqJpe@api.browserstack.com/automate/builds/"+build_id+"/sessions.json");
+        URI uri = new URI("https://mudassardemo:Mz55zvYU9iCdyV9dvsKv@api.browserstack.com/automate/builds/"+build_id+"/sessions.json");
         HttpGet getRequest = new HttpGet(uri);
         HttpResponse response =  HttpClientBuilder.create().build().execute(getRequest);
         String json_string = EntityUtils.toString(response.getEntity());

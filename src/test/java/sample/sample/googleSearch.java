@@ -1,44 +1,35 @@
 package sample.sample;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.ArrayList;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPut;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.message.BasicNameValuePair;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.SessionId;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.SessionId;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.client.methods.HttpPut;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
+
 
 public class googleSearch {
-	public static final String AUTOMATE_USERNAME = "mayankmaurya4";
-	  public static final String AUTOMATE_ACCESS_KEY ="JzJJjes3cyzHaynTqJpe";
+	public static final String AUTOMATE_USERNAME = "mudassardemo";
+	  public static final String AUTOMATE_ACCESS_KEY ="Mz55zvYU9iCdyV9dvsKv";
 	  public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	  static String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
 	  
@@ -75,7 +66,7 @@ public class googleSearch {
 		    caps.setCapability("os", "Windows");
 		    caps.setCapability("browser", "chrome");
 		    caps.setCapability("project", "Automate Project");
-		    caps.setCapability("build", "My First Build");
+		    caps.setCapability("build", "Build1");
 		    caps.setCapability("name", "launchChrome Test");
 //		    caps.setCapability("browserstack.local", browserstackLocal);
 //		    caps.setCapability("browserstack.local", "true");

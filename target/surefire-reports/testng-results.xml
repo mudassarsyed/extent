@@ -1,87 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="52339" started-at="2020-09-11T16:04:01 IST" finished-at="2020-09-11T16:04:54 IST">
+  <suite name="Suite" duration-ms="37061" started-at="2020-11-27T12:54:16Z" finished-at="2020-11-27T12:54:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="52339" started-at="2020-09-11T16:04:01 IST" finished-at="2020-09-11T16:04:54 IST">
-      <class name="sample.sample.amazonSearch">
-        <test-method status="PASS" signature="launchEdge()[pri:0, instance:sample.sample.amazonSearch@6c49835d]" name="launchEdge" duration-ms="52275" started-at="2020-09-11T16:04:01 IST" finished-at="2020-09-11T16:04:54 IST">
+    <test name="Test" duration-ms="37061" started-at="2020-11-27T12:54:16Z" finished-at="2020-11-27T12:54:53Z">
+      <class name="sample.sample.googleSearch">
+        <test-method status="PASS" signature="setup()[pri:0, instance:sample.sample.googleSearch@2ef5e5e3]" name="setup" is-config="true" duration-ms="184" started-at="2020-11-27T18:24:16Z" finished-at="2020-11-27T18:24:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchEdge -->
-        <test-method status="PASS" signature="launchFirefox()[pri:0, instance:sample.sample.amazonSearch@6c49835d]" name="launchFirefox" duration-ms="44857" started-at="2020-09-11T16:04:01 IST" finished-at="2020-09-11T16:04:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchFirefox -->
-        <test-method status="PASS" signature="launchSafari()[pri:0, instance:sample.sample.amazonSearch@6c49835d]" name="launchSafari" duration-ms="39734" started-at="2020-09-11T16:04:01 IST" finished-at="2020-09-11T16:04:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchSafari -->
-        <test-method status="FAIL" signature="launchChrome()[pri:0, instance:sample.sample.amazonSearch@6c49835d]" name="launchChrome" duration-ms="6927" started-at="2020-09-11T16:04:01 IST" finished-at="2020-09-11T16:04:08 IST">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[[browserstack.local] is set to true but local testing through BrowserStack is not connected. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.62 seconds
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-SSA0485', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: [browserstack.local] is set to true but local testing through BrowserStack is not connected. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.62 seconds
-Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
-System info: host: 'DESKTOP-SSA0485', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: driver.version: RemoteWebDriver
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:217)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:169)
-at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1(ProtocolHandshake.java:126)
-at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:136)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:149)
-at sample.sample.amazonSearch.launchChrome(amazonSearch.java:108)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="launchChrome()[pri:0, instance:sample.sample.googleSearch@2ef5e5e3]" name="launchChrome" duration-ms="36582" started-at="2020-11-27T18:24:16Z" finished-at="2020-11-27T18:24:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchChrome -->
-      </class> <!-- sample.sample.amazonSearch -->
+        <test-method status="PASS" signature="launchFirefox()[pri:0, instance:sample.sample.googleSearch@2ef5e5e3]" name="launchFirefox" duration-ms="25599" started-at="2020-11-27T18:24:16Z" finished-at="2020-11-27T18:24:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFirefox -->
+        <test-method status="PASS" signature="launchSafari()[pri:0, instance:sample.sample.googleSearch@2ef5e5e3]" name="launchSafari" duration-ms="26683" started-at="2020-11-27T18:24:16Z" finished-at="2020-11-27T18:24:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSafari -->
+        <test-method status="PASS" signature="launchEdge()[pri:0, instance:sample.sample.googleSearch@2ef5e5e3]" name="launchEdge" duration-ms="31701" started-at="2020-11-27T18:24:16Z" finished-at="2020-11-27T18:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchEdge -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:sample.sample.googleSearch@2ef5e5e3]" name="teardown" is-config="true" duration-ms="284" started-at="2020-11-27T18:24:53Z" finished-at="2020-11-27T18:24:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- sample.sample.googleSearch -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
